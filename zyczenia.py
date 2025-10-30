@@ -10,6 +10,7 @@ Imie_nadacy = input("Podaj imie nadacy: ")
 obecny_rok = datetime.datetime.now().year
 wiek = obecny_rok - Rok_urodzenia
 
+
 print(f"{Imie}, wszystkiego najlepszego z okazji {wiek} urodzin!")
 print(f"{Wiadomosc}")
 print(f"{Imie_nadacy}")
