@@ -40,7 +40,7 @@ if waga_paczki > 0:
 
 suma_pustych = ilosc_paczek * 20 - suma_wagi
 
-print("\n PODSUMOWANIE")
+print("..PODSUMOWANIE..")
 print(f"Wyslano {ilosc_paczek} paczek")
 print(f"Wyslano {suma_wagi} kg towaru")
 print(f"Suma pustych kilogramow: {suma_pustych} kg.")
