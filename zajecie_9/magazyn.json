@@ -1,0 +1,30 @@
+{
+    "saldo": 59971.0,
+    "historia": [
+        "saldo: 4324.0",
+        "saldo: 5647.0"
+    ],
+    "produkty": [
+        {
+            "Nazwa_produktu": "iPhone 15 pro",
+            "Rok_Produkcji": "2023",
+            "Cena": "4999.99",
+            "Ilosc": 3,
+            "ASIN": "23"
+        },
+        {
+            "Nazwa_produktu": "iPhone 16 pro",
+            "Rok_Produkcji": "2024",
+            "Cena": "5299.99",
+            "Ilosc": 2,
+            "ASIN": "2323"
+        },
+        {
+            "Nazwa_produktu": "iPhone 17 pro",
+            "Rok_Produkcji": "2025",
+            "Cena": "5999.99",
+            "Ilosc": 2,
+            "ASIN": "232323"
+        }
+    ]
+}
