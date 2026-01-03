@@ -1,15 +1,17 @@
 {
-    "saldo": 59971.0,
+    "saldo": 56471.03999999999,
     "historia": [
         "saldo: 4324.0",
-        "saldo: 5647.0"
+        "saldo: 5647.0",
+        "sprzedaż: iPhone 15 pro, 1 szt., 4999.99 PLN",
+        "zakup: ipad 9, 5 szt., 8499.95 PLN"
     ],
     "produkty": [
         {
             "Nazwa_produktu": "iPhone 15 pro",
             "Rok_Produkcji": "2023",
             "Cena": "4999.99",
-            "Ilosc": 3,
+            "Ilosc": 2,
             "ASIN": "23"
         },
         {
@@ -25,6 +27,13 @@
             "Cena": "5999.99",
             "Ilosc": 2,
             "ASIN": "232323"
+        },
+        {
+            "Nazwa_produktu": "ipad 9",
+            "Rok_Produkcji": "2021",
+            "Cena": "1699.99",
+            "Ilosc": 5,
+            "ASIN": "123"
         }
     ]
 }
