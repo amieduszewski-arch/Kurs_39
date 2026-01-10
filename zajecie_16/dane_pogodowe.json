@@ -1,0 +1,38 @@
+{
+    "Szczecin": {
+        "2025-12-10": "pada",
+        "2025-12-11": "nie pada"
+    },
+    "Opole": {
+        "2026-01-10": "nie pada",
+        "2026-01-11": "nie pada"
+    },
+    "Wroclaw": {
+        "2026-01-10": "Nie będzie padać",
+        "2026-01-11": "Nie będzie padać"
+    },
+    "Katowice": {
+        "2026-01-10": "Będzie padać"
+    },
+    "sdfsdf": {
+        "2026-01-10": "Nie wiem"
+    },
+    "Milan": {
+        "2026-01-10": "Nie będzie padać"
+    },
+    "Bialystok": {
+        "2026-01-10": "Będzie padać"
+    },
+    "Malaga": {
+        "2026-01-11": "Nie będzie padać"
+    },
+    "gfhfg": {
+        "2026-01-11": "Nie wiem"
+    },
+    "Poznan": {
+        "2026-01-11": "Nie będzie padać"
+    },
+    "Krakow": {
+        "2026-01-11": "Będzie padać"
+    }
+}
