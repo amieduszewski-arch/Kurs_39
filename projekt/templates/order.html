@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-
 {% block content %}
 
 <div class="order-hero">
@@ -12,56 +11,72 @@
 
         {% if cart_items %}
 
-        <table class="cart-table">
-
-            <thead>
-                <tr>
-                    <th>Produkt</th>
-                    <th>Cena</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                {% for item in cart_items %}
-                <tr>
-                    <td>{{ item.name }}</td>
-                    <td>{{ item.price }} zł</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-
-        </table>
-
         <div class="cart-summary-box">
 
-            <p>Suma: <strong>{{ total_price }} zł</strong></p>
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Produkt</th>
+                        <th>Cena</th>
+                    </tr>
+                </thead>
 
-            <p class="discount-text">
-                Rabat odbiór osobisty (-10%):
-                <strong>-{{ discount }} zł</strong>
-            </p>
+                <tbody>
+                    {% for item in cart_items %}
+                    <tr>
+                        <td>{{ item.name }}</td>
+                        <td>{{ item.price }} zł</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
 
-            <p class="final-price">
-                Do zapłaty:
-                <strong>{{ final_price }} zł</strong>
-            </p>
+            <div class="cart-summary">
+
+                <p>
+                    Suma:
+                    <strong>{{ total_price }} zł</strong>
+                </p>
+
+                <p class="discount-text">
+                    Rabat (-10%):
+                    <strong>-{{ discount }} zł</strong>
+                </p>
+
+                <p class="final-price">
+                    Do zapłaty:
+                    <strong>{{ final_price }} zł</strong>
+                </p>
+
+            </div>
+
+            <div class="cart-buttons">
+
+                <a href="/cart" class="checkout-btn">
+                    ⬅ Wróć do koszyka
+                </a>
+
+                <form method="POST" class="order-form">
+                    <button type="submit" class="checkout-btn">
+                        Złóż zamówienie
+                    </button>
+                </form>
+
+            </div>
 
         </div>
 
-        <form method="POST">
-            <button type="submit" class="checkout-btn">
-                Złóż zamówienie
-            </button>
-        </form>
-
         {% if payment_status %}
-            <p style="margin-top:15px; color:lime;">
-                {{ payment_status }}
-            </p>
+            <p class="order-success">{{ payment_status }}</p>
         {% endif %}
 
         {% else %}
-            <p>Koszyk jest pusty.</p>
+
+        <div class="cart-summary-box">
+            <p>Koszyk jest pusty</p>
+            <a href="/menu" class="checkout-btn">Przejdź do menu</a>
+        </div>
+
         {% endif %}
 
     </div>
