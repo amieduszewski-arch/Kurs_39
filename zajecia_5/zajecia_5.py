@@ -5,22 +5,22 @@ zbor_produktow = [
         "Rok_Produkcji": "2023",
         "Cena": "4999.99",
         "Ilosc": 3,
-        "ASIN": "23"
-     },
+        "ASIN": "23",
+    },
     {
         "Nazwa_produktu": "iPhone 16 pro",
         "Rok_Produkcji": "2024",
         "Cena": "5299.99",
         "Ilosc": 2,
-        "ASIN": "2323"
-     },
+        "ASIN": "2323",
+    },
     {
         "Nazwa_produktu": "iPhone 17 pro",
         "Rok_Produkcji": "2025",
         "Cena": "5999.99",
         "Ilosc": 2,
-        "ASIN": "232323"
-    }
+        "ASIN": "232323",
+    },
 ]
 
 historia_operacji = []
@@ -39,7 +39,9 @@ Wybierz jedną z poniższych komend:
 Podaj numer komendy: """)
     match wybor:
         case "1":
-            srodki = float(input("Podaj kwotę do doładowania (lub ujemną do odjęcia): "))
+            srodki = float(
+                input("Podaj kwotę do doładowania (lub ujemną do odjęcia): ")
+            )
             if salo_sklepu + srodki < 0:
                 print("Nie możesz ustawić salda na wartość ujemną.")
             else:
@@ -56,7 +58,9 @@ Podaj numer komendy: """)
                     if produkt["Ilosc"] >= ilosc:
                         produkt["Ilosc"] -= ilosc
                         salo_sklepu += float(produkt["Cena"]) * ilosc
-                        historia_operacji.append(f"sprzedaż: {produkt['Nazwa_produktu']}, {ilosc} szt., {float(produkt['Cena']) * ilosc} PLN")
+                        historia_operacji.append(
+                            f"sprzedaż: {produkt['Nazwa_produktu']}, {ilosc} szt., {float(produkt['Cena']) * ilosc} PLN"
+                        )
                         print(f"Sprzedano {ilosc} sztuk. Saldo zaktualizowane.")
                     else:
                         print("Brak wystarczającej ilości towaru na magazynie.")
@@ -76,15 +80,19 @@ Podaj numer komendy: """)
                 if not znaleziono_produkt:
                     asin = input("Podaj numer ASIN dla nowego produktu: ")
                     rok_produkcji = input("Podaj rok produkcji dla nowego produktu: ")
-                    zbor_produktow.append({
-                        "Nazwa_produktu": nazwa_produktu,
-                        "Rok_Produkcji": rok_produkcji,
-                        "Cena": str(cena),
-                        "Ilosc": ilosc,
-                        "ASIN": asin
-                    })
+                    zbor_produktow.append(
+                        {
+                            "Nazwa_produktu": nazwa_produktu,
+                            "Rok_Produkcji": rok_produkcji,
+                            "Cena": str(cena),
+                            "Ilosc": ilosc,
+                            "ASIN": asin,
+                        }
+                    )
                 salo_sklepu -= cena * ilosc
-                historia_operacji.append(f"zakup: {nazwa_produktu}, {ilosc} szt., {cena * ilosc} PLN")
+                historia_operacji.append(
+                    f"zakup: {nazwa_produktu}, {ilosc} szt., {cena * ilosc} PLN"
+                )
                 print("Zakupiono. Saldo zaktualizowane.")
             else:
                 print("Za mało środków na koncie.")
@@ -93,13 +101,17 @@ Podaj numer komendy: """)
         case "5":
             print("Stan magazynu:")
             for produkt in zbor_produktow:
-                print(f"{produkt['Nazwa_produktu']} - {produkt['Ilosc']} szt., cena: {produkt['Cena']} PLN")
+                print(
+                    f"{produkt['Nazwa_produktu']} - {produkt['Ilosc']} szt., cena: {produkt['Cena']} PLN"
+                )
         case "6":
             nazwa_produktu = input("Podaj nazwę produktu: ")
             znaleziono_produkt = False
             for produkt in zbor_produktow:
                 if produkt["Nazwa_produktu"].lower() == nazwa_produktu.lower():
-                    print(f"Stan magazynu dla produktu {nazwa_produktu}: {produkt['Ilosc']} szt., cena: {produkt['Cena']} PLN")
+                    print(
+                        f"Stan magazynu dla produktu {nazwa_produktu}: {produkt['Ilosc']} szt., cena: {produkt['Cena']} PLN"
+                    )
                     znaleziono_produkt = True
                     break
             if not znaleziono_produkt:

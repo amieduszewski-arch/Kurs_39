@@ -10,7 +10,7 @@ slot_z_najmniejszym_zajetym_miejscem = 1
 najlezejszy_slot = 10000
 
 for numer_filmow in range(ilosc_filmow):
-    rozmiar_filmow = float(input(f"Poda rozmiar filmu {numer_filmow +1}(w MB): "))
+    rozmiar_filmow = float(input(f"Poda rozmiar filmu {numer_filmow + 1}(w MB): "))
     if rozmiar_filmow < 10 or rozmiar_filmow > 3000:
         break
     calkowita_wielkosc_filmow += rozmiar_filmow
@@ -27,5 +27,9 @@ if calkowita_wielkosc_filmow == 0:
 else:
     print(f"Calkowita rozmiar wszystkich fulmow {calkowita_wielkosc_filmow} Mb")
     print(f"Ilosc slotów: {ilosc_slotow}")
-    print(f"Ilosc pustej przestszeni: {ilosc_slotow * maksymalna_pojemnosc_slotu - calkowita_wielkosc_filmow}")
-    print(f"Najlzejszy slot to {slot_z_najmniejszym_zajetym_miejscem}, mial {maksymalna_pojemnosc_slotu - najlezejszy_slot} wolnego miejsca")
+    print(
+        f"Ilosc pustej przestszeni: {ilosc_slotow * maksymalna_pojemnosc_slotu - calkowita_wielkosc_filmow}"
+    )
+    print(
+        f"Najlzejszy slot to {slot_z_najmniejszym_zajetym_miejscem}, mial {maksymalna_pojemnosc_slotu - najlezejszy_slot} wolnego miejsca"
+    )

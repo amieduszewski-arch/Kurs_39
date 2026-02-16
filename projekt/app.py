@@ -326,8 +326,6 @@ def stats():
     )
 
 
-# wysylanie zamowienia
-
 def send_order_email(order):
 
     if not EMAIL_PASSWORD:

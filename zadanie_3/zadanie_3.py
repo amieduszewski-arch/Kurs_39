@@ -10,7 +10,7 @@ nr_paczki_max_puste = 1
 ilosc_paczek = 0
 
 for i in range(ilosc_elementow):
-    waga_elementu = float(input(f"Podaj wage elementu nr {i+1}: "))
+    waga_elementu = float(input(f"Podaj wage elementu nr {i + 1}: "))
 
     if waga_elementu < 1 or waga_elementu > 10:
         print("Waga poza zakresem 1–10 kg, koniec pakowania")
@@ -44,4 +44,6 @@ print("..PODSUMOWANIE..")
 print(f"Wyslano {ilosc_paczek} paczek")
 print(f"Wyslano {suma_wagi} kg towaru")
 print(f"Suma pustych kilogramow: {suma_pustych} kg.")
-print(f"Najwiecej pustych kilogramow ma paczka {nr_paczki_max_puste} ({najwiecej_pustych} kg).")
+print(
+    f"Najwiecej pustych kilogramow ma paczka {nr_paczki_max_puste} ({najwiecej_pustych} kg)."
+)

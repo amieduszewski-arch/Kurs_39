@@ -40,7 +40,7 @@ dobra_ocena = 0
 suma_ocen = 0
 
 for i in range(ilosc_ocen):
-    ocena = int(input(f"Podaj ocenę {i+1}: "))
+    ocena = int(input(f"Podaj ocenę {i + 1}: "))
     if ocena < 2 or ocena > 5:
         print("Ocena może być tylko od 2 do 5.")
         break

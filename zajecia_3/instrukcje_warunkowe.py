@@ -19,7 +19,7 @@ from platform import win32_edition
 #
 # print("Zegnamy do zobaczenia w zabce!")
 
-#zadanie_2
+# zadanie_2
 
 # zawod = input("Podaj zawod w ktorym pracujesz?: ")
 # wiek = int(input("Podaj swoj wiek?: "))
@@ -50,7 +50,7 @@ from platform import win32_edition
 #         print(f"Nie masz jeszcze 65 lat, twoj wiek {wiek} musisz jeszcze dopracowac {65 - wiek} lat!")
 #     wiek += 1
 
-#Pietle FOR
+# Pietle FOR
 
 # ilosc_ocen = int(input("Podaj ilosc ocen do sredniu: "))
 # suma_ocen = 0
@@ -62,30 +62,3 @@ from platform import win32_edition
 #     ocena = int(input("Podaj ocene?: "))
 #     suma_ocen += ocena
 # print(f"Srednia aryfmetyczna z ocen to: {suma_ocen/ilosc_ocen}")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
