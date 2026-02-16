@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="cart-hero">
+
+    <img src="{{ url_for('static', filename='images/koszyk.jpg') }}" alt="Koszyk">
+
+    <div class="cart-hero-overlay">
+
+        <h1>Koszyk</h1>
+
+        {% if cart_items %}
+
+        <table class="cart-table">
+
+            <thead>
+                <tr>
+                    <th>Produkt</th>
+                    <th>Cena</th>
+                    <th>Akcja</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for item in cart_items %}
+                <tr>
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.price }} zł</td>
+                    <td>
+                        <form method="POST" action="/remove-from-cart">
+                            <input type="hidden" name="index" value="{{ loop.index0 }}">
+                            <button type="submit" class="remove-btn">Usuń</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+
+        </table>
+
+        <div class="cart-summary-box">
+
+            <p>Suma: <strong>{{ total_price }} zł</strong></p>
+
+            <p class="discount-text">
+                Rabat odbiór osobisty (-10%):
+                <strong>-{{ discount }} zł</strong>
+            </p>
+
+            <p class="final-price">
+                Do zapłaty:
+                <strong>{{ final_price }} zł</strong>
+            </p>
+
+        </div>
+
+        <a href="/order" class="checkout-btn">
+            Przejdź do zamówienia
+        </a>
+
+        {% else %}
+
+        <p>Koszyk jest pusty.</p>
+
+        {% endif %}
+
+    </div>
+
+</div>
+
+{% endblock %}

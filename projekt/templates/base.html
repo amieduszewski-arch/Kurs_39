@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Greek Street Food</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+{% if request.path == '/menu' %}
+
+<div id="cart-overlay" class="cart-overlay"></div>
+
+<div id="side-cart" class="side-cart">
+
+    <h3>Koszyk</h3>
+
+    <div id="cart-items"></div>
+
+    <div class="cart-summary">
+
+        <p>Suma: <strong><span id="cart-total">0</span> zł</strong></p>
+
+        <p class="discount-text">
+            Rabat (-10%): -<span id="cart-discount">0</span> zł
+        </p>
+
+        <p class="final-price">
+            Do zapłaty: <strong><span id="cart-final">0</span> zł</strong>
+        </p>
+
+    </div>
+
+    <a href="/cart" class="cart-checkout-btn">
+        Podsumowanie zamówienia
+    </a>
+
+</div>
+
+{% endif %}
+
+<nav class="navbar">
+    <a href="/menu" class="nav-left">Menu</a>
+    <a href="/" class="logo">Greek Street Food</a>
+    <a href="/cart" class="nav-right">Koszyk</a>
+    <a href="/stats" class="Statys">Statystyki</a>
+</nav>
+
+</nav>
+
+
+<main>
+    {% block content %}{% endblock %}
+</main>
+
+
+{% if request.path == '/menu' %}
+<script src="{{ url_for('static', filename='js/cart.js') }}"></script>
+{% endif %}
+
+</body>
+</html>
