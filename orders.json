@@ -1,0 +1,430 @@
+[
+    {
+        "date": "2026-01-20 18:53:05",
+        "dishes": [
+            {
+                "name": "Gyros klasyczny",
+                "price": 32,
+                "category": "Dania główne"
+            },
+            {
+                "name": "Sałatka grecka",
+                "price": 26,
+                "category": "Wegetariańskie"
+            }
+        ],
+        "total_price": 58,
+        "status": "PAID (SIMULATION)"
+    },
+    {
+        "date": "2026-01-20 18:55:19",
+        "dishes": [
+            {
+                "name": "Souvlaki z kurczaka",
+                "price": 34,
+                "category": "Dania główne"
+            },
+            {
+                "name": "Baklava",
+                "price": 18,
+                "category": "Desery"
+            }
+        ],
+        "total_price": 52,
+        "status": "PAID (SIMULATION)"
+    },
+    {
+        "date": "2026-01-24 18:31:23",
+        "dishes": [
+            {
+                "name": "Sałatka grecka",
+                "price": 26,
+                "category": "Wegetariańskie"
+            },
+            {
+                "name": "Baklava",
+                "price": 18,
+                "category": "Desery"
+            }
+        ],
+        "total_price": 44,
+        "status": "PAID (SIMULATION)"
+    },
+    {
+        "date": "2026-01-24 18:38:24",
+        "dishes": [
+            {
+                "name": "Sałatka grecka",
+                "price": 26,
+                "category": "Wegetariańskie"
+            }
+        ],
+        "total_price": 26,
+        "status": "PAID (SIMULATION)"
+    },
+    {
+        "date": "2026-01-24 19:00:50",
+        "dishes": [
+            {
+                "name": "Sałatka grecka",
+                "price": 26,
+                "category": "Wegetariańskie"
+            }
+        ],
+        "total_price": 26,
+        "status": "PAID (SIMULATION)"
+    },
+    {
+        "date": "2026-01-24 19:01:02",
+        "dishes": [
+            {
+                "name": "Baklava",
+                "price": 18,
+                "category": "Desery"
+            }
+        ],
+        "total_price": 18,
+        "status": "PAID (SIMULATION)"
+    },
+    {
+        "date": "2026-01-24 19:02:59",
+        "dishes": [
+            {
+                "name": "Baklava",
+                "price": 18,
+                "category": "Desery"
+            }
+        ],
+        "total_price": 18,
+        "status": "PAID (SIMULATION)"
+    },
+    {
+        "date": "2026-01-24 19:03:03",
+        "dishes": [
+            {
+                "name": "Baklava",
+                "price": 18,
+                "category": "Desery"
+            }
+        ],
+        "total_price": 18,
+        "status": "PAID (SIMULATION)"
+    },
+    {
+        "date": "2026-01-24 19:04:10",
+        "dishes": [
+            {
+                "name": "Sałatka grecka",
+                "price": 26,
+                "category": "Wegetariańskie"
+            }
+        ],
+        "total_price": 26,
+        "status": "PAID (SIMULATION)"
+    },
+    {
+        "date": "2026-01-24 19:06:11",
+        "dishes": [
+            {
+                "name": "Baklava",
+                "price": 18,
+                "category": "Desery"
+            }
+        ],
+        "total_price": 18,
+        "status": "PAID (SIMULATION)"
+    },
+    {
+        "date": "2026-01-24 19:08:40",
+        "dishes": [
+            {
+                "name": "Souvlaki z kurczaka",
+                "price": 34,
+                "category": "Dania główne"
+            }
+        ],
+        "total_price": 34,
+        "status": "PAID (SIMULATION)"
+    },
+    {
+        "date": "2026-01-24 19:11:50",
+        "dishes": [
+            {
+                "name": "Baklava",
+                "price": 18,
+                "category": "Desery"
+            }
+        ],
+        "total_price": 18,
+        "status": "PAID (SIMULATION)"
+    },
+    {
+        "date": "2026-01-24 19:12:21",
+        "dishes": [
+            {
+                "name": "Sałatka grecka",
+                "price": 26,
+                "category": "Wegetariańskie"
+            }
+        ],
+        "total_price": 26,
+        "status": "PAID (SIMULATION)"
+    },
+    {
+        "date": "2026-01-24 19:13:19",
+        "dishes": [
+            {
+                "name": "Baklava",
+                "price": 18,
+                "category": "Desery"
+            }
+        ],
+        "total_price": 18,
+        "status": "PAID (SIMULATION)"
+    },
+    {
+        "date": "2026-01-24 20:05:24",
+        "dishes": [
+            {
+                "name": "Baklava",
+                "price": 18,
+                "category": "Desery"
+            }
+        ],
+        "total_price": 18,
+        "status": "PAID (SIMULATION)"
+    },
+    {
+        "date": "2026-01-24 20:44:51",
+        "dishes": [
+            {
+                "category": "Souvlaki na talerzu",
+                "description": "kurczak, pita, tzatziki, sałata, pomidor, frytki",
+                "name": "Talerz z kurczakiem",
+                "price": 36
+            },
+            {
+                "category": "Souvlaki pita",
+                "description": "wieprzowina, pita, tzatziki, sałata, pomidor, ogórek małosolny",
+                "name": "Pita z wieprzowiną",
+                "price": 36
+            },
+            {
+                "category": "Souvlaki pita",
+                "description": "kurczak, pita, tzatziki, sałata, pomidor, ogórek małosolny",
+                "name": "Pita z kurczakiem",
+                "price": 34
+            }
+        ],
+        "total_price": 106,
+        "status": "PAID (SIMULATION)"
+    },
+    {
+        "date": "2026-01-24 20:45:36",
+        "dishes": [
+            {
+                "category": "Souvlaki pita",
+                "description": "kurczak, pita, tzatziki, sałata, pomidor, ogórek małosolny",
+                "name": "Pita z kurczakiem",
+                "price": 34
+            }
+        ],
+        "total_price": 34,
+        "status": "PAID (SIMULATION)"
+    },
+    {
+        "date": "2026-01-24 20:51:22",
+        "dishes": [
+            {
+                "category": "Souvlaki pita",
+                "description": "kurczak, pita, tzatziki, sałata, pomidor, ogórek małosolny",
+                "name": "Pita z kurczakiem",
+                "price": 34
+            },
+            {
+                "category": "Dodatki",
+                "description": "tradycyjna grecka feta",
+                "name": "Ser feta",
+                "price": 8
+            }
+        ],
+        "total_price": 42,
+        "status": "PAID (SIMULATION)"
+    },
+    {
+        "date": "2026-01-26 18:42:08",
+        "dishes": [
+            {
+                "category": "Souvlaki pita",
+                "description": "kurczak, pita, tzatziki, sałata, pomidor, ogórek małosolny",
+                "image": "dishes/Pita_z_kurczakiem.jpg",
+                "name": "Pita z kurczakiem",
+                "price": 34
+            },
+            {
+                "category": "Souvlaki pita",
+                "description": "wieprzowina, pita, tzatziki, sałata, pomidor, ogórek małosolny",
+                "image": "dishes/Pita_z_wieprzowina.jpg",
+                "name": "Pita z wieprzowiną",
+                "price": 36
+            },
+            {
+                "category": "Souvlaki na talerzu",
+                "description": "wieprzowina, pita, tzatziki, sałata, pomidor, frytki",
+                "image": "dishes/Talerz_z_wieprzowina.jpg",
+                "name": "Talerz z wieprzowiną",
+                "price": 38
+            }
+        ],
+        "total_price": 97.2,
+        "discount": 10.8,
+        "status": "PAID (SIMULATION)"
+    },
+    {
+        "date": "2026-02-06 11:12:19",
+        "dishes": [
+            {
+                "category": "Souvlaki pita",
+                "description": "wieprzowina, pita, tzatziki, sałata, pomidor, ogórek małosolny",
+                "image": "dishes/Pita_z_wieprzowina.jpg",
+                "name": "Pita z wieprzowiną",
+                "price": 36
+            },
+            {
+                "category": "Souvlaki pita",
+                "description": "wieprzowina, pita, tzatziki, sałata, pomidor, ogórek małosolny",
+                "image": "dishes/Pita_z_wieprzowina.jpg",
+                "name": "Pita z wieprzowiną",
+                "price": 36
+            },
+            {
+                "category": "Dodatki",
+                "description": "podawane z parmezanem i tymiankiem",
+                "image": "dishes/Frytki_duze_210g.jpg",
+                "name": "Frytki duże 210g",
+                "price": 17
+            }
+        ],
+        "total_price": 80.1,
+        "discount": 8.9,
+        "status": "PAID (SIMULATION)"
+    },
+    {
+        "date": "2026-02-06 12:08:16",
+        "dishes": [
+            {
+                "category": "Souvlaki na talerzu",
+                "description": "wieprzowina, pita, tzatziki, sałata, pomidor, frytki",
+                "image": "dishes/Talerz_z_wieprzowina.jpg",
+                "name": "Talerz z wieprzowiną",
+                "price": 38
+            },
+            {
+                "category": "Souvlaki na talerzu",
+                "description": "mintaj, pita, tzatziki, sałata, pomidor, frytki",
+                "image": "dishes/Talerz_z_ryba_panierowana.jpg",
+                "name": "Talerz z rybą panierowaną",
+                "price": 40
+            },
+            {
+                "category": "Souvlaki pita",
+                "description": "wieprzowina, pita, tzatziki, sałata, pomidor, ogórek małosolny",
+                "image": "dishes/Pita_z_wieprzowina.jpg",
+                "name": "Pita z wieprzowiną",
+                "price": 36
+            }
+        ],
+        "total_price": 102.6,
+        "discount": 11.4,
+        "status": "PAID (SIMULATION)"
+    },
+    {
+        "date": "2026-02-16 23:51:30",
+        "dishes": [
+            {
+                "category": "Souvlaki na talerzu",
+                "description": "kurczak, pita, tzatziki, sałata, pomidor, frytki",
+                "image": "dishes/Talerz_z_kurczakiem.jpg",
+                "name": "Talerz z kurczakiem",
+                "price": 36,
+                "qty": 1
+            },
+            {
+                "category": "Souvlaki na talerzu",
+                "description": "wieprzowina, pita, tzatziki, sałata, pomidor, frytki",
+                "image": "dishes/Talerz_z_wieprzowina.jpg",
+                "name": "Talerz z wieprzowiną",
+                "price": 38,
+                "qty": 1
+            },
+            {
+                "category": "Souvlaki pita",
+                "description": "wieprzowina, pita, tzatziki, sałata, pomidor, ogórek małosolny",
+                "image": "dishes/Pita_z_wieprzowina.jpg",
+                "name": "Pita z wieprzowiną",
+                "price": 36
+            },
+            {
+                "category": "Souvlaki pita",
+                "description": "kurczak, pita, tzatziki, sałata, pomidor, ogórek małosolny",
+                "image": "dishes/Pita_z_kurczakiem.jpg",
+                "name": "Pita z kurczakiem",
+                "price": 34
+            }
+        ],
+        "total_price": 129.6,
+        "discount": 14.4,
+        "status": "PAID (SIMULATION)"
+    },
+    {
+        "date": "2026-02-16 23:56:27",
+        "dishes": [
+            {
+                "category": "Souvlaki na talerzu",
+                "description": "kurczak, pita, tzatziki, sałata, pomidor, frytki",
+                "image": "dishes/Talerz_z_kurczakiem.jpg",
+                "name": "Talerz z kurczakiem",
+                "price": 36
+            }
+        ],
+        "total_price": 32.4,
+        "discount": 3.6,
+        "status": "PAID (SIMULATION)"
+    },
+    {
+        "date": "2026-02-16 23:58:02",
+        "dishes": [
+            {
+                "category": "Souvlaki na talerzu",
+                "description": "wieprzowina, pita, tzatziki, sałata, pomidor, frytki",
+                "image": "dishes/Talerz_z_wieprzowina.jpg",
+                "name": "Talerz z wieprzowiną",
+                "price": 38
+            }
+        ],
+        "total_price": 34.2,
+        "discount": 3.8,
+        "status": "PAID (SIMULATION)"
+    },
+    {
+        "date": "2026-02-26 18:52:41",
+        "dishes": [
+            {
+                "category": "Souvlaki na talerzu",
+                "description": "mintaj, pita, tzatziki, sałata, pomidor, frytki",
+                "image": "dishes/Talerz_z_ryba_panierowana.jpg",
+                "name": "Talerz z rybą panierowaną",
+                "price": 40
+            },
+            {
+                "category": "Souvlaki na talerzu",
+                "description": "wieprzowina, pita, tzatziki, sałata, pomidor, frytki",
+                "image": "dishes/Talerz_z_wieprzowina.jpg",
+                "name": "Talerz z wieprzowiną",
+                "price": 38
+            }
+        ],
+        "total_price": 70.2,
+        "discount": 7.8
+    }
+]

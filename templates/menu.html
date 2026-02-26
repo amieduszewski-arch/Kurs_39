@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="menu-page-bg">
+
+    <div class="menu-overlay">
+
+        <h1 class="menu-title">Menu</h1>
+
+        {% for category, items in categories.items() %}
+
+            <h2 class="category-title">{{ category }}</h2>
+
+            <div class="menu-grid">
+
+                {% for dish in items %}
+
+                <div class="menu-card">
+
+                    <div class="menu-info">
+                        <h3>{{ dish.name }}</h3>
+                        <p class="price">{{ dish.price }} zł</p>
+                        <p class="desc">{{ dish.description }}</p>
+                    </div>
+
+                    <!-- ZDJĘCIE DANIA -->
+                    <div class="menu-image">
+                        <img src="{{ url_for('static', filename='images/' + dish.image) }}">
+                    </div>
+
+                    <!-- PRZYCISK DODAWANIA -->
+                    <button class="add-btn"
+                            onclick="addToCart('{{ dish.name }}')">
+                        +
+                    </button>
+
+                </div>
+
+                {% endfor %}
+
+            </div>
+
+        {% endfor %}
+
+    </div>
+
+</div>
+
+{% endblock %}

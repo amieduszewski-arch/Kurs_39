@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="order-hero">
+
+    <img src="{{ url_for('static', filename='images/podsumowanie.jpg') }}" alt="Podsumowanie">
+
+    <div class="order-hero-overlay">
+
+        <h1>Podsumowanie zamówienia</h1>
+
+        {% if cart_items %}
+
+        <div class="cart-summary-box">
+
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Produkt</th>
+                        <th>Cena</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {% for item in cart_items %}
+                    <tr>
+                        <td>{{ item.name }}</td>
+                        <td>{{ item.price }} zł</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            <div class="cart-summary">
+                <p>Suma: <strong>{{ total_price }} zł</strong></p>
+
+                <p class="discount-text">
+                    Rabat (-10%): <strong>-{{ discount }} zł</strong>
+                </p>
+
+                <p class="final-price">
+                    Do zapłaty: <strong>{{ final_price }} zł</strong>
+                </p>
+            </div>
+
+            <div class="cart-buttons">
+
+                <a href="{{ url_for('cart') }}" class="checkout-btn">
+                    ⬅ Wróć do koszyka
+                </a>
+
+                <form method="POST" action="{{ url_for('order') }}" class="order-form">
+                    <button type="submit" class="checkout-btn">
+                        Złóż zamówienie
+                    </button>
+                </form>
+
+            </div>
+
+        </div>
+
+        {% else %}
+
+        <div class="cart-summary-box">
+            <p>Koszyk jest pusty</p>
+
+            <a href="{{ url_for('menu') }}" class="checkout-btn">
+                Przejdź do menu
+            </a>
+        </div>
+
+        {% endif %}
+
+        {% if payment_status %}
+            <div class="order-success">
+                {{ payment_status }}
+            </div>
+        {% endif %}
+
+    </div>
+
+</div>
+
+{% endblock %}

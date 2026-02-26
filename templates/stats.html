@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Statystyki zamówień</h1>
+
+<canvas id="ordersChart" width="400" height="200"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const labels = {{ labels | tojson }};
+    const values = {{ values | tojson }};
+
+    new Chart(document.getElementById("ordersChart"), {
+        type: "bar",
+        data: {
+            labels: labels,
+            datasets: [{
+                label: "Liczba zamówień",
+                data: values
+            }]
+        }
+    });
+</script>
+{% endblock %}
